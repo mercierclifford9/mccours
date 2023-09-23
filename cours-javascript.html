@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cours</title>
+    <link rel="icon" href="img/logo icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header >
+        <div class="nav-1 nav "  >
+
+        </div>
+        <nav class="navbar navbar-expand-lg  bg-white  " style="position: relative;">
+            <div class="container">
+            <a class="navbar-brand" href="index.html" ><img src="img/mc-cours.png" alt="Logo MC Business" width="150px" ></a>
+            <div class="nav secondary-nav  ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active"  aria-current="page" href="index.html">Acceuil</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="cours.html">Cours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutoriel.html">Tutoriels</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">  <img src="img/login icon.png" alt="" width="20px" class="icon">
+                        Connection
+                        </a>
+                        <ul class="dropdown-menu  style="z-index: 10000;">
+                            <li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#connection-account">Se connecter</a></li>
+                            <li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#create-account">Creer un compte</a></li>
+                            <li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#instructor-account">Instructeur</a></li>
+                        </ul>
+                    </li>
+                    
+                    </ul>
+                </div>
+<!--------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="create-account">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-primary">Creer un compte</h4>
+            </div>                                          
+            <div class="modal-body">
+               <form action="account.html">
+                    <h5 class="mb-4">Remplissez ce formulaire pour creer un compte</h5>
+                    <label for="mail" class="form-label">Email*</label>
+                    <input type="mail" class="form-control mb-3  " id="mail" placeholder="exemple@gmail.com" required>
+                    <label for="mt-p" class="form-label">Mot de passe*</label>
+                    <input type="password" id="mt-p" class="form-control mb-3 " placeholder="Entrez un mot de passe" required>
+                    <label for="v-mt-p" class="form-label">Verifier votre mot de passe*</label>
+                    <input type="text" id="v-mt-p" class="form-control mb-3 " placeholder="Verifier votre mot de passe" required>
+                    <input type="checkbox" class="form-contol" id="check"> <label for="check">Garder ma session active</label>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    </div>
+               </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="connection-account">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-primary">Connectez vous </h4>
+            </div>                                          
+            <div class="modal-body">
+                <form action="account.html">
+                    <h5 class="mb-4 text-center">Connection</h5>
+                    <label for="mail" class="form-label">Email*</label>
+                    <input type="mail" class="form-control mb-3  " id="mail" placeholder="exemple@gmail.com" required>
+                    <label for="mt-p" class="form-label">Mot de passe*</label>
+                    <input type="password" id="mt-p" class="form-control mb-3 " placeholder="Entrez un mot de passe" required>
+                    <input type="checkbox" class="form-contol" id="check"> <label for="check">Garder ma session active</label>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Connecter</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    </div>
+               </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="instructor-account">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-primary"> Instructeur</h4>
+            </div>                                          
+            <div class="modal-body">
+                <form action="instructor.html">
+                    <h5 class="mb-4 text-center">Connection</h5>
+                    <label for="mail" class="form-label">Email*</label>
+                    <input type="mail" class="form-control mb-3  " id="mail" placeholder="exemple@gmail.com" required>
+                    <label for="mt-p" class="form-label">Mot de passe*</label>
+                    <input type="password" id="mt-p" class="form-control mb-3 " placeholder="Entrez un mot de passe" required>
+                    <input type="checkbox" class="form-contol" id="check"> <label for="check">Garder ma session active</label>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Connecter</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    </div>
+               </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------------->
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid mt-5 ">
+            <div class="row">
+                <div class=" col-xm-12 col-sm-12 col-md-12 col-lg-9 p-4">
+                    <h1 class="text-primary  main-cours" >Chapitre 1 - Lorem ipsum dolor sit amet.</h1>
+                    <h3 class="bg-dark text-light mt-4 mb-3">1- Lorem ipsum dolor sit amet.</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quibusdam repellat repellendus, nobis minima voluptas quidem, impedit saepe labore earum corporis laboriosam fugiat cupiditate praesentium provident modi possimus libero ab!
+                    Aliquid deserunt explicabo, suscipit deleniti quo quam saepe odio doloremque distinctio! Quas officia eum blanditiis tempora! Ut eum sint dolore doloremque iusto, incidunt cum. Voluptate sapiente inventore commodi itaque molestiae?
+                    Cum odio sed fugiat mollitia minima voluptate atque distinctio, exercitationem quaerat soluta dolorum nam natus deleniti vero voluptates at sint labore reiciendis nemo quia. Illum eos blanditiis ipsum perspiciatis consectetur?
+                    Reiciendis eum quo <span class="bg-dark text-light p-1">asperiores  </span> perspiciatis alias sunt vitae amet ratione. Atque iure maxime nulla eius, vel commodi consequuntur ducimus id doloribus tempore. Illum non, deleniti animi reprehenderit ipsa soluta atque.
+                    Deserunt repellendus quidem nostrum sequi laboriosam error illo dolore accusamus dignissimos vitae animi ipsam, laborum minima voluptate consequuntur at consequatur qui non reiciendis asperiores culpa? Vitae sit ratione ullam optio.
+                    </p>
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo perferendis placeat in commodi numquam inventore, velit modi voluptate molestiae, culpa sit suscipit cupiditate eius! Exercitationem laudantium sit eos dolorum in!
+                        Voluptas, fugit labore. Ad necessitatibus est nam quia nulla quam suscipit, a voluptate, perspiciatis error ipsam quidem optio deserunt rem dolorem culpa. Illum, architecto. Laborum ullam iure atque dolorem voluptate.
+                        Quibusdam nostrum dicta iure error pariatur doloremque at distinctio dolores illum ducimus inventore nesciunt, dolore quasi laudantium consectetur quis omnis. Voluptatem quibusdam omnis, eum nulla deleniti molestiae ut tempore obcaecati.
+                        Adipisci nesciunt, eos animi molestias magnam eligendi laudantium cum vel recusandae dolor possimus officia est, corporis officiis amet error quibusdam voluptatum omnis in. Consequatur tenetur aperiam aut velit ab incidunt.
+                        Nemo suscipit laborum accusamus ullam et. Iure vero quam ea, officiis est  voluptates necessitatibus adipisci nostrum officia nulla maiores ratione, corrupti, in tempore ipsa! Nobis sunt numquam eum itaque?
+                        Optio voluptatum vel repellendus <span class="bg-dark text-light p-1"> magnam</span> ratione, aliquam amet, possimus doloribus reprehenderit, officiis corrupti perspiciatis exercitationem. Non quae iusto fugit aliquam dignissimos maiores, quibusdam velit doloribus cupiditate iste amet, itaque neque asperiores?
+                    </p>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repudiandae error nam iste voluptatum iusto! Ad, ducimus! Dolore recusandae accusamus voluptates! Corrupti voluptatum quis minus <span class="bg-dark text-light p-1"> deserunt!</span> maiores minima. Excepturi, labore ab.
+                        Temporibus nam aliquam tempora cumque libero iusto. Dolores, nemo itaque atque tenetur, neque harum omnis mollitia maiores non, suscipit veritatis. Suscipit corporis vitae cum facere veniam quasi enim id et!
+                        Reiciendis quidem dolore unde eligendi accusantium iure ratione nihil expedita cum, minima vero? Architecto ad labore maxime totam provident velit? Nisi ipsam vero repellendus consectetur quis! Reprehenderit quidem at ut.
+                    </p>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,  adipisicing elit. Reprehenderit, impedit alias exercitationem ea neque, quo fugit vel recusandae expedita necessitatibus eligendi consequatur<span class="bg-dark text-light p-1"> consectetur</span> est tempora? Quia laboriosam provident laborum ab. Iste?
+                        Voluptas nesciunt ad molestiae quibusdam omnis aliquam odit optio sed, eaque eveniet consequuntur exercitationem, sequi velit inventore quidem earum quasi alias commodi! Dolores amet quod earum, eligendi alias perferendis nemo!
+                        Incidunt perspiciatis sunt quisquam. At ut repellat unde eligendi amet inventore fugit rerum temporibus <span class="bg-dark text-light p-1"> deserunt!</span> Maiores possimus, voluptatum rem nihil saepe debitis at, quod, ad ipsa nostrum ullam omnis incidunt.
+                        Iste eius exercitationem modi nobis quae deserunt earum dolores, quo placeat dolorem illo hic voluptate, alias maiores eos autem numquam unde deleniti perspiciatis quibusdam illum repudiandae aliquid! Voluptate, magni aliquam?
+                        Quis vitae atque minus odit nobis reiciendis, iure explicabo. Libero voluptates enim soluta labore facere distinctio ex natus sunt aliquam, nobis facilis animi architecto inventore, minus saepe nulla. Tempora, molestiae.
+                    </p>
+                    <hr>
+                    <div class="row mx-auto">
+                        <div class="col-md-4 mx-auto">
+                            <div>
+                                <a href="" class="btn btn-primary text-light me-5"> Precedent</a>
+                                <a href="" class="btn btn-primary text-light"> Suivant</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-3 aside  p-0">
+                    <div class="m-3">
+                        <h3 class="text-light bg-dark pt-1 ps-2">Table des matieres</h3>
+                    <ul class="pb-5">
+                         <li class="list-unstyled ">
+                            <h4>Chapitre 1</h4>
+                            <ul>
+                                <li class="list-unstyled tab-mat"><a href="#" >1- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >2- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >3- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >4- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >5- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >6- Lorem ipsum dolor sit amet.</a> </li>
+                            </ul>     
+                        </li>
+                        <li class="list-unstyled ">
+                            <h4>Chapitre 2</h4>
+                            <ul>
+                                <li class="list-unstyled tab-mat"><a href="#" >7- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >8- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >9- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >10- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >11- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >12- Lorem ipsum dolor sit amet.</a> </li>
+                            </ul>     
+                        </li>
+                        <li class="list-unstyled ">
+                            <h4>Chapitre 3</h4>
+                            <ul>
+                                <li class="list-unstyled tab-mat"><a href="#" >13- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >14- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >15- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >16- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >17- Lorem ipsum dolor sit amet.</a> </li>
+                                <li class="list-unstyled tab-mat"><a href="#" >18- Lorem ipsum dolor sit amet.</a> </li>
+                            </ul>     
+                        </li>
+                        <li class="list-unstyled">
+                            <h4>Certification</h4>
+                            <i><strong>Fin du cours, merci d'avoir choisi MC cours et de nous faire confiance</strong>  </i>
+                        </li>
+                    </ul>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+          
+        <div class="container-fluid bg-dark mt-3">
+            <div class="footer-first  bg-primary">
+
+            </div>
+            <div class="row-footer ">
+                <div class="col">
+                    <ul class="list-unstyled footer-items">
+                        <li> <a class="text-decoration-none text-light" href="index.html">Accueil</a></li>
+                        <li><a class="text-decoration-none text-light" href="#apropo">Cours</a></li>
+                        <li><a class="text-decoration-none text-light"href="#projet">Tutoriels</a></li>
+                        <li><a class="text-decoration-none text-light"href="#contact">Contact</a></li>
+                    </ul>
+
+                </div>
+                
+                <div class="col">
+                    <div class="font-weight-bold">Social</div>
+                    <a href="https://web.facebook.com/cliffordnaourdjy.mercier/?_rdc=1&_rdr"><img src="img/facebook.png" alt="facebook" width="30px"></a>
+                    <a href="https://www.instagram.com/cliff_ord_official/"><img src="img/instagram.png" alt="instagram" width="30px"></a>
+                    <a href="https://www.gmail.com"><img src="img/google+.png" alt="Google+" width="30px"></a>
+                </div>
+            </div>
+            
+           
+        <div class="row " style="color: white;">
+            <div class="col-md-12 text-center mt-5 mb-2">
+                <i>©2023 MC cours une branche de la MC Business. Tous droits réservés.</i>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav-1{
+    background-color: #0099ff;
+    height: 40px;
+}
+img{
+    max-width: 100%;
+}
+nav{
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
+}
+.nav-item>a:hover{
+    color: #0099ff;
+}
+
+.title-t{
+    font-weight: 700;
+}
+.dropdown-menu>li>a:hover{
+    background-color: #0099ff;
+    color: #fff;
+}
+.navbar-brand{
+    margin: 0;
+}
+.aside>div{
+    background-color: #f4f2f2;
+}
+.text-banner{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    font-weight: 600;
+}
+iframe{
+    max-width: 100%;
+}
+.main-cours{
+    background-color: #f4f2f2;
+}
+
+.icon{
+    filter: saturate(0);
+}
+.icon:hover{
+    filter: saturate(1);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-first{
+    height: 50px;
+    width: 100%;
+    background-color: #0099ff;
+
+}
+li>a:hover{
+    color: #0099ff;
+}
+.part{
+    margin-bottom: 10px;
+}
+.card{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.card:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    margin-top: 5px;
+    margin-bottom: 0;
+
+}
+main>.container>.row-course{
+    margin-top: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 20px;
+}
+main>.container>.row-course:hover{
+    background-color: #f5f3f3;
+}
+.form-label{
+    font-weight: 600;
+}
+main{
+    min-height: 80vh;
+}
+.row-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 20px;
+    width: 60%;
+    
+}
+.newletter{
+     border-radius: 50px;
+}
+footer>.container-fluid{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+.tab-mat>a:hover{
+    color: #0099ff;
+    text-decoration: underline;
+
+}
+.tab-mat>a{
+    color: black;
+    text-decoration: none;
+}
+/* .row-footer>.col{
+    display: flex;
+    flex-flow: row nowrap;
+
+} */
+@media (max-width:468px){
+    body{
+        font-size: 16px;
+    }
+}
+@media (max-width:768px){
+    body{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:1024px){
+    body{
+        font-size: 16px;
+    }
+}

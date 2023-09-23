@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creer un nouveau cours</title>
+    <link rel="icon" href="img/logo icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav-1 nav "  >
+    
+        </div>
+        <nav class="navbar navbar-expand-lg  bg-white  " >
+            <div class="container">
+            <a class="navbar-brand" href="index.html" ><img src="img/mc-cours.png" alt="Logo MC Business" width="150px" ></a>
+            <div class="nav secondary-nav  ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link " href="instructor.html"  >Acceuil</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link " href="cours-p.htm">Cours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutoriel-p.html">Tutoriels</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">  <img src="img/messi.jpg" class="rounded-circle" alt="" width="30px">
+                        Prof Nom & Prenom
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="profil-p.html"  class="nav-link" >Profil</a></li>
+                            <li><a href="course-p.html"  class="nav-link" >Mes cours</a></li>
+                            <li><a href="new-course.html"  class="nav-link" >Creer un nouveau cours</a></li>
+                            <li><a href="index.html" class="nav-link" >Se deconnecter</a></li>
+                        </ul>
+                    </li>            
+                </ul>
+            </div>
+    <!--------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------->
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid mt-5 ">
+            <div class="row">
+                <div class=" col-xm-12 col-sm-12 col-md-12 col-lg-9 p-4 pt-0">
+                    <h1 class="text-primary  main-cours pt-1 ps-2" >--Commencez a creer votre cours</h1>
+                    <h3 class="bg-dark text-light mt-4 mb-3 pt-1 ps-2">Remplissez cette forme</h3>
+                    <form action="">
+                        <div class="pb-3 ps-3">
+                            <label for="title-c" class="form-label " >Quel est le titre du cours ?
+                            </label>
+                            <div>
+                                <input type="text" class="Form-control" id="title-c" placeholder="Titre de la lecon">
+                            </div>
+                        </div>
+                        <div class="w-100 text-center">
+                            <button class="btn btn-primary">
+                                Creer le cours
+                            </button>
+
+                        </div>
+                        <h3 class="bg-dark text-light mt-4 mb-3 pt-1 ps-2">Creer un chapitre</h3>
+
+                        <div class="pb-3 ps-3">
+                            <i>
+                                <strong> 
+                                    NB: Attention!!! Veuillez d'abord remplire la table des matieres
+                                </strong>
+                            </i>
+                        </div>
+
+                        <div class="pb-5 ps-3">
+                            <label for="title-c" class="form-label" > Choisissez une lecon
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#add-lecon" class="btn btn-secondary ms-3">
+                                    Ajouter
+                                </a>                
+                            </label> <br>
+                            <input type="text" disabled class="form-contol w-100" placeholder="Cliquez sur ajouter pour choisir une lecon">
+                        </div>
+                        <div class="pb-5 ps-3">
+                            <label for="title-c" class="form-label" > Choisissez un chapitre
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#add-chapter" class="btn btn-secondary ms-3">
+                                    Ajouter
+                                </a>
+                            </label> <br>
+                            <input type="text" disabled class="form-contol w-100" placeholder="Cliquez sur ajouter pour choisir un chapitre">
+                        </div>
+
+                        <div class="pb-3 ps-3">
+                            <label for="title-c" class="form-label" >Ajouter un paragraphe
+                               <a href="#" data-bs-toggle="modal" data-bs-target="#add-paragraph" class="btn btn-secondary ms-3">
+                                    Ajouter
+                                </a> 
+                            </label>
+                        </div>
+                        <div class="w-100 text-center">
+                            <button class="btn btn-primary">
+                                Ajouter le chapitre
+                            </button>
+
+                        </div>
+                    </form>
+<!---------------------------------------------------------------------------------------------------------->
+                    <div class="modal fade" id="add-lecon">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-primary">Choisissez une Lecon</h4>
+                                </div>                                          
+                                <div class="modal-body">
+                                <h5>
+                                    Liste des Lecons :
+                                </h5>
+                                <ul>
+                                    <li>
+                                        <i><strong>Veuillez ajouter une lecon dans la table des matieres</strong></i>
+                                    </li>
+                                </ul>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Ajouter</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="add-chapter">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-primary">Choisissez un chapitre</h4>
+                                </div>                                          
+                                <div class="modal-body">
+                                <h5>
+                                    Liste des chapitres :
+                                </h5>
+                                <ul>
+                                    <li>
+                                        <i><strong>Veuillez choisir une lecon au prealable</strong></i>
+                                    </li>
+                                </ul>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Ajouter</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="add-paragraph">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-primary">Ajouter un paragraphe</h4>
+                                </div>                                          
+                                <div class="modal-body">
+                                    <form action="new-course.html">
+                                        <label for="paragraph" class="form-label"> Saisissez votre paragraphe</label>
+                                        <textarea  id="paragraph" cols="30" rows="10" class="form-control" required>
+                                        </textarea>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary">Ajouter</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                        </div>
+                                    </form>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+<!---------------------------------------------------------------------------------------------------------->                   
+                   
+                </div>
+
+
+                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-3 aside  p-0 pt-4 ">
+                    <div class="m-3 mt-5  pb-3">
+                        <h3 class="text-light bg-dark pt-1 ps-2">Table des matieres</h3>
+                        <form action="">
+                            <div class="pb-3 ps-3">
+                                <label class="form-label" >Ajouter une lecon
+
+                                    <input type="text" class="Form-control" placeholder="Titre de la lecon">
+                                    <button class="btn btn-secondary">
+                                        Ajouter
+                                    </button>
+                                </label>
+                            </div>
+                            <div class="pb-3 ps-3">
+                                <label class="form-label" >Ajouter un chapitre
+
+                                    <input type="text" class="Form-control" placeholder="Titre du chapitre">
+                                    <button class="btn btn-secondary">
+                                        Ajouter
+                                    </button>
+                                </label>
+                               
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary w-80">Cliquez pour finir la table</button>
+                            </div>
+                            
+                            <div class="ms-3">
+                                <i>
+                                    <strong> 
+                                        NB: Une lecon peut contenir plusieurs chapitre mais pas l'inverse.
+                                    </strong>
+                                </i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+          
+        <div class="container-fluid bg-dark mt-3">
+            <div class="footer-first  bg-primary">
+
+            </div>
+            <div class="row-footer ">
+                <div class="col">
+                    <ul class="list-unstyled footer-items">
+                        <li> <a class="text-decoration-none text-light" href="index.html">Accueil</a></li>
+                        <li><a class="text-decoration-none text-light" href="#apropo">Cours</a></li>
+                        <li><a class="text-decoration-none text-light"href="#projet">Tutoriels</a></li>
+                        <li><a class="text-decoration-none text-light"href="#contact">Contact</a></li>
+                    </ul>
+
+                </div>
+                
+                <div class="col">
+                    <div class="font-weight-bold">Social</div>
+                    <a href="https://web.facebook.com/cliffordnaourdjy.mercier/?_rdc=1&_rdr"><img src="img/facebook.png" alt="facebook" width="30px"></a>
+                    <a href="https://www.instagram.com/cliff_ord_official/"><img src="img/instagram.png" alt="instagram" width="30px"></a>
+                    <a href="https://www.gmail.com"><img src="img/google+.png" alt="Google+" width="30px"></a>
+                </div>
+            </div>
+            
+           
+        <div class="row " style="color: white;">
+            <div class="col-md-12 text-center mt-5 mb-2">
+                <i>©2023 MC cours une branche de la MC Business. Tous droits réservés.</i>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
